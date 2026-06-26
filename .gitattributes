@@ -1,0 +1,15 @@
+# Normalize line endings: store as LF in the repo, auto-detect text files
+* text=auto eol=lf
+
+# Windows-specific scripts keep CRLF on checkout
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Explicit binary files (never normalize)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.sqlite3 binary
