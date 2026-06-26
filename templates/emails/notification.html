@@ -1,0 +1,6 @@
+<h1>{{ message.subject }}</h1>
+<p>Cześć {{ message.receiver }},</p>
+<p>To jest automatyczne powiadomienie wysłane ze skrzynki <strong>{{ message.mailbox.name }}</strong>.</p>
+<p>Dziękujemy za korzystanie z naszego serwisu.</p>
+<hr>
+<small>Wiadomość utworzona: {{ message.created_at }}</small>
